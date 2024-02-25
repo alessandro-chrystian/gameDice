@@ -31,9 +31,26 @@ img {
     width: 80%;
 }
 
-button {
+.rollDices {
     display: block;
-    margin:  5% auto;
+    margin: 5% auto;
+    background-color: #fff;
+    border: solid;
+    border-radius: 10%;
+    color: black;
+    font-weight: bolder;
+    font-size: 1rem;
+    transition: ease-in-out 0.2s;
+}
+
+.rollDices:hover {
+    transition: ease-in-out 0.2s;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.rollDices:active {
+    transform: translateY(7px);
 }
 
 footer {
