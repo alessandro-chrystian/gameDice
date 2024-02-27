@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 95vh;
+    overflow: hidden;
 }
 
 /* container section */
@@ -62,14 +62,14 @@ img {
     cursor: pointer;
 }
 
-.contact-icon:hover {
+.contact-item:hover {
     font-size: 1.8rem;
     cursor: pointer;
 }
 
 /* active section */
 
-.rollDices:active, .contact-icon:active {
+.rollDices:active, .contact-item:active {
     transform: translateY(7px);
 }
 
@@ -80,22 +80,31 @@ footer {
     text-align: center;
 }
 
-.contact-link {
-    padding: 5px;
-    display: inline-block;
-    margin: 0 10%;
+.contact-list {
+    list-style-type: none;
+    padding: 0;
 }
 
-.contact-icon {
-    transition: ease-in-out 0.2s;
+.contact-item {
+    display: inline-block;
+    margin: 0 7%;
     font-size: 1.5rem;
+    transition: ease-in-out 0.5s;
+}
+
+.contact-item a {
+    padding: 10px;
 }
 
 /* mobile */
 
-@media (max-width: 768px){
+@media (max-width: 1030px){
+    body{
+        overflow: visible;
+    }
+
     h1 {
-        font-size: 3.8rem;
+        font-size: 5rem;
     }
     .dice {
         width: 50%;
